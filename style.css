@@ -1,0 +1,67 @@
+p{
+    color: white;
+}
+h1{
+    color: white;
+}
+
+.form-container {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.background-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* Black box */
+    z-index: -1;
+    /* Put it behind the form */
+    border-radius: 10px;
+    /* Optional: rounded edges for the box */
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    /* Ensures the form is above the box */
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    /* Space between label and input field */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* Ensures padding does not affect the width */
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    padding: 10px 140px;
+    border-radius: 10px;
+    /* Rounded edges for the button */
+    border: none;
+    cursor: pointer;
+}
+
+.green-button:hover {
+    background-color: darkgreen;
+}
